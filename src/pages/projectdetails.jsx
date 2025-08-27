@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Project } from "@/entities/Project";
+import { Project } from "@/entities/Projects.js";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
