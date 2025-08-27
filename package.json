@@ -1,7 +1,8 @@
+// filepath: /Users/talin/Documents/Uni/PersonalWebsite/TalinPersonalPortfolio/package.json
 {
-  "name": "elev8ed-landing",
-  "version": "0.0.1",
+  "name": "talin-portfolio",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,17 +11,26 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@radix-ui/react-tabs": "^1.0.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
     "framer-motion": "^10.12.16",
     "lucide-react": "^0.277.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.0",
-    "autoprefixer": "^10.4.14",
-    "gh-pages": "^5.0.0",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.2",
-    "vite": "^7.1.1"
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "gh-pages": "^6.0.0",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
   }
 }
