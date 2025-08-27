@@ -1,8 +1,8 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Layout from './layout';
-import Home from './pages/home';
-import ProjectDetails from './pages/projectdetails';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from './pages/Home';
+import ProjectDetails from './pages/ProjectDetails';
 
 export default function App() {
   return (
