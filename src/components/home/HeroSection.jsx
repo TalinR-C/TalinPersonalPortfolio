@@ -22,8 +22,8 @@ export default function HeroSection() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-              Hi, I'm Talin
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Talin 
+              Hi, I'm
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"> Talin 
 
               </span>
             </h1>
