@@ -4,15 +4,10 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/TalinPersonalPortfolio/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
-  base: './',
-  define: {
-    'process.env': {
-      NODE_ENV: JSON.stringify(process.env.NODE_ENV)
-    }
-  }
-})
+});
