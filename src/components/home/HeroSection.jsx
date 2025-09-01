@@ -1,11 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import ContactDropdown from "../hero/ContactDropDown";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowRight, Download, Sparkles } from "lucide-react";
 
 export default function HeroSection() {
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/images/Resume_TalinRusso-Christoffelsz.pdf';
+    link.download = 'Resume_TalinRusso-Christoffelsz.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="min-h-[85vh] flex items-center justify-center px-6 bg-gradient-to-br from-white via-blue-25 to-blue-50">
       <div className="max-w-6xl mx-auto">
@@ -40,14 +50,14 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
 
-            <Link to={createPageUrl("PersonalProjects")}>
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg">
-                View My Work
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </Link>
+            <ContactDropdown />
             
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-2 hover:bg-slate-50">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-4 text-lg border-2 hover:bg-slate-50"
+              onClick={handleResumeDownload}
+            >
               <Download className="w-5 h-5 mr-2" />
               Download Resume
             </Button>
@@ -82,6 +92,6 @@ export default function HeroSection() {
           </motion.div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

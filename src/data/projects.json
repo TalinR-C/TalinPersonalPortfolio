@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "elev8ed",
-      "title": "Elev8ed — Gamified Self-Improvement App",
+      "title": "Elev8ed — Self-Improvement App",
       "description": "A gamified self-improvement mobile application designed to help users stay consistent with their goals through vision and action.",
       "detailed_description": "Elev8ed is a personal project where I designed, built, and iterated on a mobile app that merges self-improvement with gamification. I led the full development lifecycle: from research and wireframing, to UI/UX design, to implementing core features in FlutterFlow and integrating APIs. The app introduces a vision system where users create avatars representing their future selves, attach attributes to define goals, and track progress in a structured, motivational way. Throughout the project, I applied both technical and product-thinking skills: database design, frontend development, animation, user feedback loops, and branding.",
       "project_type": "personal",
