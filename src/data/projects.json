@@ -122,7 +122,7 @@
       ],
       "start_date": "2025-03-01",
       "end_date": "2025-05-22",
-      "image_url": "/images/projects/KnapsackSolver.png",
+      "image_url": "images/projects/KnapsackSolver.png",
       "featured": true
     },
     {
@@ -180,7 +180,7 @@
       ],
       "start_date": "2024-08-15",
       "end_date": "2024-11-08",
-      "image_url": "/images/projects/MazeGenerator.jpg",
+      "image_url": "images/projects/MazeGenerator.jpg",
       "featured": true
     },
     {
@@ -237,7 +237,7 @@
       ],
       "start_date": "2025-08-01",
       "end_date": null,
-      "image_url": "/images/projects/PeakLogo.png",
+      "image_url": "images/projects/PeakLogo.png",
       "featured": true
     },
     {
@@ -293,7 +293,7 @@
       ],
       "start_date": "2025-07-15",
       "end_date": null,
-      "image_url": "/images/projects/StudentMatching.png",
+      "image_url": "images/projects/StudentMatching.png",
       "featured": true
     }
   ]
