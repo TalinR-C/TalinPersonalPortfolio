@@ -18,7 +18,7 @@ export default function ProjectHighlightCard({ project }) {
             <img 
               src={
                 project.image_url
-                  ? `${import.meta.env.PUBLIC_URL}${project.image_url}`
+                  ? `${import.meta.env.BASE_URL}${project.image_url}`
                   : 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=400&fit=crop'
               }
               alt={project.title}
