@@ -9,7 +9,7 @@ import { ArrowRight, Download, Sparkles } from "lucide-react";
 export default function HeroSection() {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/images/Resume_TalinRusso-Christoffelsz.pdf';
+    link.href = 'public/images/Resume_TalinRusso-Christoffelsz.pdf';
     link.download = 'Resume_TalinRusso-Christoffelsz.pdf';
     document.body.appendChild(link);
     link.click();
