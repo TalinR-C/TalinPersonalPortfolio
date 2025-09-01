@@ -13,7 +13,7 @@ export default function ProjectHighlightCard({ project }) {
       transition={{ type: 'spring', stiffness: 300 }}
       className="h-full"
     >
-      <Link to={createPageUrl(`ProjectDetails?id=${project.id}`)} className="block h-full">
+      <Link to={`/project/${project.id}`} className="block h-full">
         <Card className="h-full border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-2xl overflow-hidden group">
           <div className="relative">
             <img 
@@ -21,7 +21,7 @@ export default function ProjectHighlightCard({ project }) {
               alt={project.title}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute inset-0" />
             <div className="absolute top-4 right-4 p-2 bg-white/80 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <ArrowUpRight className="w-5 h-5 text-slate-900" />
             </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Project } from "@/entities/Projects";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import { Skeleton } from "../ui/skeleton";
 import ProjectHighlightCard from "./ProjectHighlightCard";
 import { Briefcase, GraduationCap } from "lucide-react";
 
@@ -85,14 +85,24 @@ export default function ProjectsSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12 h-14 p-2">
-              <TabsTrigger value="personal" className="h-full text-md gap-2">
-                <Briefcase className="w-5 h-5" /> Personal
-              </TabsTrigger>
-              <TabsTrigger value="university" className="h-full text-md gap-2">
-                <GraduationCap className="w-5 h-5" /> University
-              </TabsTrigger>
-            </TabsList>
+            <div className="flex justify-center">
+              <TabsList className="inline-flex w-auto bg-gray-100 rounded-xl mx-auto p-2">
+                <TabsTrigger
+                  value="personal"
+                  className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow"
+                >
+                  <Briefcase className="w-5 h-5" />
+                  Personal
+                </TabsTrigger>
+                <TabsTrigger
+                  value="university"
+                  className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-gray-500 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow"
+                >
+                  <GraduationCap className="w-5 h-5" />
+                  University
+                </TabsTrigger>
+              </TabsList>
+            </div>
           </motion.div>
           
           <TabsContent value="personal">

@@ -1,25 +1,73 @@
 {
   "projects": [
     {
-      "id": "project1",
-      "title": "Example Project",
-      "description": "A brief description",
-      "detailed_description": "A more detailed overview...",
+      "id": "elev8ed",
+      "title": "Elev8ed App",
+      "description": "A gamified self-improvement mobile application designed to help young men stay consistent with their goals through vision-based avatars, attributes, and progress tracking.",
+      "detailed_description": "Elev8ed is a personal project where I designed, built, and iterated on a mobile app that merges self-improvement with gamification. I led the full development lifecycle: from research and wireframing, to UI/UX design, to implementing core features in FlutterFlow and integrating APIs. The app introduces a vision system where users create avatars representing their future selves, attach attributes to define goals, and track progress in a structured, motivational way. Throughout the project, I applied both technical and product-thinking skills: database design, frontend development, animation, user feedback loops, and branding.",
       "project_type": "personal",
-      "tech_stack": ["React", "TypeScript", "Tailwind"],
+      "tech_stack": ["FlutterFlow", "JavaScript", "Firebase", "Jira"],
       "timeline_steps": [
         {
-          "step_title": "Planning",
-          "step_description": "Initial project planning",
+          "step_title": "Research & Concept Ideation",
+          "step_description": "Studied gamification strategies, analyzed self-improvement trends, and defined the target audience. Created a feature roadmap and sketched early concepts inspired by video games and anime aesthetics.",
           "date": "2023-01-01",
           "status": "completed"
+        },
+        {
+          "step_title": "Wireframing & UI/UX Design",
+          "step_description": "Created wireframes and prototypes with a focus on a clean, minimalistic design with a gaming-inspired feel. Iterated layouts for the vision page, onboarding flow, and attribute/goal tracking to maximize clarity and engagement.",
+          "date": "2023-02-01",
+          "status": "completed"
+        },
+        {
+          "step_title": "Frontend Development",
+          "step_description": "Implemented UI in FlutterFlow and React (for web components). Used Tailwind for styling consistency and responsive layouts. Built custom navigation flows and interactive components to replicate a polished app experience.",
+          "date": "2023-03-01",
+          "status": "completed"
+        },
+        {
+          "step_title": "Backend Setup & Database Design",
+          "step_description": "Configured Firebase as the backend to handle authentication, user data, and real-time updates. Designed scalable data models for visions, avatars, attributes, and goals.",
+          "date": "2023-03-15",
+          "status": "completed"
+        },
+        {
+          "step_title": "Feature Development",
+          "step_description": "Built the avatar system (with attributes, habits, and goals), progress tracking dashboards, and gamified reward mechanisms. Designed data-driven graphs and integrated time/date calculations for progress visualization.",
+          "date": "2023-04-01",
+          "status": "completed"
+        },
+        {
+          "step_title": "Branding & Visual Identity",
+          "step_description": "Created the Elev8ed brand identity, including the logo, color scheme (matte black primary with green/red highlights), and avatar design language. Ensured consistency across UI and marketing material.",
+          "date": "2023-04-15",
+          "status": "completed"
+        },
+        {
+          "step_title": "Internal Testing & Feedback",
+          "step_description": "Conducted closed testing with peers and early users. Identified usability challenges in the walkthrough and layout. Designed and launched structured feedback surveys to gather insights for iteration.",
+          "date": "2023-05-01",
+          "status": "completed"
+        },
+        {
+          "step_title": "Iteration & Bug Fixing",
+          "step_description": "Refined onboarding flow, simplified confusing sections, fixed UI/UX bugs, and optimized backend queries. Prioritized changes that improved clarity, engagement, and retention.",
+          "date": "2023-05-15",
+          "status": "completed"
+        },
+        {
+          "step_title": "Future Roadmap",
+          "step_description": "Planned Strava API integration for activity tracking, improved gamification with 3D avatars, and eventual deployment to App Store/Google Play.",
+          "date": "2023-06-01",
+          "status": "in_progress"
         }
       ],
       "start_date": "2023-01-01",
       "end_date": "2023-06-01",
       "github_url": "https://github.com/yourusername/project",
-      "demo_url": "https://demo.example.com",
-      "image_url": "/images/projects/project1.png",
+      "demo_url": "https://elev8edapp.github.io/Elev8edApp/",
+      "image_url": "/images/projects/Elev8edLogo.png",
       "featured": true
     }
   ]

@@ -6,7 +6,7 @@ import { GraduationCap, MapPin, Calendar, Award } from "lucide-react";
 
 export default function EducationSection() {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section className="py-20 px-6 bg-gradient-to-br from-slate-50 via-blue-25 to-blue-50">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

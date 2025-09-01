@@ -50,12 +50,13 @@ export default function HorizontalTimeline({ steps }) {
 
   return (
     <div className="w-full overflow-x-auto py-16 px-8 md:px-16 lg:px-32">
-      <div className="relative w-max mx-auto">
-        {/* The timeline bar */}
-        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-slate-200 -translate-y-1/2"></div>
+      <div className="relative min-w-max h-[400px]"> {/* fixed height container */}
         
+        {/* Timeline bar centered vertically */}
+        <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 h-0.5 bg-slate-200"></div>
+
         <motion.div
-          className="flex items-center gap-8 md:gap-12"
+          className="flex items-center gap-8 md:gap-12 h-full" // ensures flex items align to full height
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -64,16 +65,16 @@ export default function HorizontalTimeline({ steps }) {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="relative w-64 shrink-0"
+              className="relative w-64 shrink-0 h-full"
               variants={itemVariants}
             >
-              {/* Timeline Dot */}
+              {/* Timeline dot always aligned to bar center */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-2 border-blue-500 z-10"></div>
               
-              {/* Card - Positioned alternating up and down */}
+              {/* Card alternates up and down */}
               <div
                 className={`absolute left-1/2 -translate-x-1/2 w-full ${
-                  index % 2 === 0 ? 'bottom-full mb-4' : 'top-full mt-4'
+                  index % 2 === 0 ? 'bottom-[60%]' : 'top-[60%]'
                 }`}
               >
                 <motion.div
@@ -83,17 +84,21 @@ export default function HorizontalTimeline({ steps }) {
                 >
                   <div className="p-4">
                     <div className="flex items-center gap-3 mb-2">
-                       <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
-                         {getIconForStep(step.step_title)}
-                       </div>
-                       <div>
-                         <h4 className="font-bold text-slate-800 text-base leading-tight">{step.step_title}</h4>
-                       </div>
+                      <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                        {getIconForStep(step.step_title)}
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-800 text-base leading-tight">
+                          {step.step_title}
+                        </h4>
+                      </div>
                     </div>
-                    
-                    <p className="text-sm text-slate-600 mb-2 leading-snug">{step.step_description}</p>
+
+                    <p className="text-sm text-slate-600 mb-2 leading-snug">
+                      {step.step_description}
+                    </p>
                     <p className="text-xs text-slate-400 font-medium">
-                        {step.date ? format(new Date(step.date), "MMM, yyyy") : ''}
+                      {step.date ? format(new Date(step.date), "MMM, yyyy") : ""}
                     </p>
                   </div>
                 </motion.div>

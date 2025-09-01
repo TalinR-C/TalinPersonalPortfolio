@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "@/entities/Projects.js";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { motion } from "framer-motion";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -13,12 +13,11 @@ import HorizontalTimeline from "../components/projects/HorizontalTimeline";
 export default function ProjectDetails() {
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
-  const location = useLocation();
+  const { id: projectId } = useParams();
+  const navigate = useNavigate(); // Changed from useLocation to useParams
 
   useEffect(() => {
     const fetchProject = async () => {
-      const params = new URLSearchParams(location.search);
-      const projectId = params.get("id");
       if (projectId) {
         setLoading(true);
         try {
@@ -34,7 +33,7 @@ export default function ProjectDetails() {
       }
     };
     fetchProject();
-  }, [location.search]);
+  }, [projectId]); // Changed dependency from location.search to projectId
 
   if (loading) {
     return (
@@ -59,18 +58,20 @@ export default function ProjectDetails() {
     );
   }
 
-  const backUrl = project.project_type === 'personal' ? createPageUrl('PersonalProjects') : createPageUrl('UniProjects');
+  const backUrl = "/TalinPersonalPortfolio/";
 
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
-          <Link to={backUrl}>
-            <Button variant="ghost" className="mb-8 gap-2">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Projects
-            </Button>
-          </Link>
+          <Button 
+            variant="ghost" 
+            className="mb-8 gap-2"
+            onClick={() => navigate(-1)}
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back Home
+          </Button>
         </motion.div>
 
         <motion.header 

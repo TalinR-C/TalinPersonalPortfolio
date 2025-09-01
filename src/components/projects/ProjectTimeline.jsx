@@ -64,7 +64,7 @@ export default function HorizontalTimeline({ steps }) {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="relative w-64 shrink-0"
+              className="relative w-120 shrink-0"
               variants={itemVariants}
             >
               {/* Timeline Dot */}
@@ -74,7 +74,7 @@ export default function HorizontalTimeline({ steps }) {
               <div
                 className={`absolute left-1/2 -translate-x-1/2 w-full ${
                   index % 2 === 0 ? 'bottom-full mb-4' : 'top-full mt-4'
-                }`}
+                } w-120`}
               >
                 <motion.div
                   className="bg-white rounded-xl shadow-lg border border-slate-100/80 overflow-hidden"
