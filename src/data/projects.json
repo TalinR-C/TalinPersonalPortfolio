@@ -10,60 +10,60 @@
       "timeline_steps": [
         {
           "step_title": "Research & Concept Ideation",
-          "step_description": "Studied gamification strategies, analyzed self-improvement trends, and defined the target audience. Created a feature roadmap and sketched early concepts inspired by video games and anime aesthetics.",
-          "date": "2023-01-01",
+          "step_description": "Explored gamification strategies, analyzed self-improvement trends, and defined the target audience. Created a roadmap and sketched early concepts inspired by video games and anime aesthetics.",
+          "date": "2024-01-01",
           "status": "completed"
         },
         {
-          "step_title": "Wireframing & UI/UX Design",
-          "step_description": "Created wireframes and prototypes with a focus on a clean, minimalistic design with a gaming-inspired feel. Iterated layouts for the vision page, onboarding flow, and attribute/goal tracking to maximize clarity and engagement.",
-          "date": "2023-02-01",
+          "step_title": "Design & Prototyping",
+          "step_description": "Built wireframes and prototypes with a clean, minimalistic style and gaming-inspired feel. Designed layouts for the vision page, onboarding flow, and goal/attribute tracking.",
+          "date": "2024-02-01",
           "status": "completed"
         },
         {
-          "step_title": "Frontend Development",
-          "step_description": "Implemented UI in FlutterFlow and React (for web components). Used Tailwind for styling consistency and responsive layouts. Built custom navigation flows and interactive components to replicate a polished app experience.",
-          "date": "2023-03-01",
+          "step_title": "Initial Development",
+          "step_description": "Set up the Firebase backend, designed scalable data models, and implemented the frontend in FlutterFlow. Developed the core logic for avatars, attributes, and gamified progress tracking.",
+          "date": "2024-04-01",
           "status": "completed"
         },
         {
-          "step_title": "Backend Setup & Database Design",
-          "step_description": "Configured Firebase as the backend to handle authentication, user data, and real-time updates. Designed scalable data models for visions, avatars, attributes, and goals.",
-          "date": "2023-03-15",
+          "step_title": "First Internal Testing",
+          "step_description": "Launched an early version to friends for feedback. Identified usability issues in navigation and walkthrough flow, and began iterating on the experience.",
+          "date": "2024-06-01",
           "status": "completed"
         },
         {
-          "step_title": "Feature Development",
-          "step_description": "Built the avatar system (with attributes, habits, and goals), progress tracking dashboards, and gamified reward mechanisms. Designed data-driven graphs and integrated time/date calculations for progress visualization.",
-          "date": "2023-04-01",
+          "step_title": "First Public Launch",
+          "step_description": "Released the app through a personal brand account to gain initial users. Collected feedback, refined the onboarding process, and improved UI clarity.",
+          "date": "2024-08-01",
           "status": "completed"
         },
         {
-          "step_title": "Branding & Visual Identity",
-          "step_description": "Created the Elev8ed brand identity, including the logo, color scheme (matte black primary with green/red highlights), and avatar design language. Ensured consistency across UI and marketing material.",
-          "date": "2023-04-15",
+          "step_title": "Second Launch & Iteration",
+          "step_description": "Rolled out an improved version with a refined walkthrough, polished UI/UX, and bug fixes.",
+          "date": "2025-04-01",
           "status": "completed"
         },
         {
-          "step_title": "Internal Testing & Feedback",
-          "step_description": "Conducted closed testing with peers and early users. Identified usability challenges in the walkthrough and layout. Designed and launched structured feedback surveys to gather insights for iteration.",
-          "date": "2023-05-01",
+          "step_title": "Third Launch & Ongoing Improvements",
+          "step_description": "Launched again with further refinements based on continuous feedback. Optimized database queries and enhanced the gamified reward system to boost engagement.",
+          "date": "2025-08-01",
           "status": "completed"
         },
         {
-          "step_title": "Iteration & Bug Fixing",
-          "step_description": "Refined onboarding flow, simplified confusing sections, fixed UI/UX bugs, and optimized backend queries. Prioritized changes that improved clarity, engagement, and retention.",
-          "date": "2023-05-15",
-          "status": "completed"
+          "step_title": "In-Depth Feedback & User Interviews",
+          "step_description": "Currently conducting structured surveys and planning user interviews to better understand pain points and opportunities for deeper engagement.",
+          "date": "2025-09-01",
+          "status": "in_progress"
         },
         {
           "step_title": "Future Roadmap",
-          "step_description": "Planned Strava API integration for activity tracking, improved gamification with 3D avatars, and eventual deployment to App Store/Google Play.",
-          "date": "2023-06-01",
-          "status": "in_progress"
+          "step_description": "Plans include enhanced gamification with 3D avatars, further UI/UX polish, and eventual deployment to the App Store and Google Play.",
+          "date": "2025-12-01",
+          "status": "planned"
         }
       ],
-      "start_date": "2024-01-01",
+      "start_date": "2025-10-01",
       "demo_url": "https://elev8edapp.github.io/Elev8edApp/",
       "image_url": "images/projects/Elev8edLogo.png",
       "featured": true
