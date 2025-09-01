@@ -16,7 +16,11 @@ export default function ProjectHighlightCard({ project }) {
         <Card className="h-full border-0 shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-2xl overflow-hidden group">
           <div className="relative">
             <img 
-              src={project.image_url || 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=400&fit=crop'}
+              src={
+                project.image_url
+                  ? `${process.env.PUBLIC_URL}/${project.image_url}`
+                  : 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&h=400&fit=crop'
+              }
               alt={project.title}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
