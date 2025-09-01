@@ -50,12 +50,12 @@ export default function HorizontalTimeline({ steps }) {
 
   return (
     <div className="w-full overflow-x-auto py-16 px-8 md:px-16 lg:px-32">
-      <div className="relative w-max mx-auto">
+      <div className="relative w-full mx-auto">
         {/* The timeline bar */}
         <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-slate-200 -translate-y-1/2"></div>
         
         <motion.div
-          className="flex items-center gap-8 md:gap-12"
+          className="flex items-center gap-8 md:gap-12 min-w-max"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -64,7 +64,7 @@ export default function HorizontalTimeline({ steps }) {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="relative w-120 shrink-0"
+              className="relative shrink-0 w-[30rem]"
               variants={itemVariants}
             >
               {/* Timeline Dot */}
@@ -72,9 +72,9 @@ export default function HorizontalTimeline({ steps }) {
               
               {/* Card - Positioned alternating up and down */}
               <div
-                className={`absolute left-1/2 -translate-x-1/2 w-full ${
+                className={`absolute left-1/2 -translate-x-1/2 ${
                   index % 2 === 0 ? 'bottom-full mb-4' : 'top-full mt-4'
-                } w-120`}
+                } w-[30rem]`}
               >
                 <motion.div
                   className="bg-white rounded-xl shadow-lg border border-slate-100/80 overflow-hidden"

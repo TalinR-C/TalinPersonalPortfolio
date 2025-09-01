@@ -50,7 +50,7 @@ export default function HorizontalTimeline({ steps }) {
 
   return (
     <div className="w-full overflow-x-auto py-16 px-8 md:px-16 lg:px-32">
-      <div className="relative min-w-max h-[400px]"> {/* fixed height container */}
+      <div className="relative min-w-max h-[520px]"> {/* fixed height container */}
         
         {/* Timeline bar centered vertically */}
         <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2 h-0.5 bg-slate-200"></div>

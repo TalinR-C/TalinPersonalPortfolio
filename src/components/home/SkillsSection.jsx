@@ -16,37 +16,37 @@ const skillCategories = [
     title: "Frontend Development",
     icon: Globe,
     color: "from-blue-500 to-blue-600",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"]
+    skills: ["HTML/CSS", "JavaScript", "Flutter (Dart)"]
   },
   {
     title: "Backend Development",
     icon: Database,
     color: "from-green-500 to-green-600",
-    skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"]
+    skills: ["Java", "Python", "SQL", "Firebase"]
   },
   {
     title: "Mobile Development",
     icon: Smartphone,
     color: "from-purple-500 to-purple-600",
-    skills: ["React Native", "Flutter", "iOS", "Android", "Expo"]
+    skills: ["Swift (iOS)", "Flutter (Dart)", "FlutterFlow"]
   },
   {
     title: "Programming Languages",
     icon: Code,
     color: "from-orange-500 to-orange-600",
-    skills: ["JavaScript", "Python", "Java", "C++", "Go"]
+    skills: ["Java", "Python", "JavaScript", "HTML/CSS", "SQL", "C++", "Swift", "Dart"]
   },
   {
     title: "Cloud & DevOps",
     icon: Cloud,
     color: "from-indigo-500 to-indigo-600",
-    skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+    skills: ["Google Cloud", "Firebase", "Git", "Jira"]
   },
   {
     title: "Data & AI",
     icon: Cpu,
     color: "from-red-500 to-red-600",
-    skills: ["Machine Learning", "TensorFlow", "Pandas", "NumPy", "SQL"]
+    skills: ["Python", "Jupyter Notebooks"]
   }
 ];
 

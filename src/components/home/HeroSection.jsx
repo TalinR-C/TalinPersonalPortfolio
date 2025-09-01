@@ -18,7 +18,7 @@ export default function HeroSection() {
 
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
-              Available for Summer 2024 Internships
+              Available for Internships
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
@@ -62,7 +62,7 @@ export default function HeroSection() {
             <div className="bg-gradient-to-r from-blue-600/10 to-indigo-600/10 p-8 rounded-3xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">15+</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">4+</div>
                   <div className="text-slate-600 text-sm">Projects Built</div>
                 </div>
                 <div className="text-center">
@@ -70,11 +70,11 @@ export default function HeroSection() {
                   <div className="text-slate-600 text-sm">Languages</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">3.8</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">3.0</div>
                   <div className="text-slate-600 text-sm">GPA</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">2024</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">2027</div>
                   <div className="text-slate-600 text-sm">Graduation</div>
                 </div>
               </div>
