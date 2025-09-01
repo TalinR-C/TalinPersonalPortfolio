@@ -62,11 +62,11 @@ export default function HeroSection() {
             <div className="bg-gradient-to-r from-blue-600/10 to-indigo-600/10 p-8 rounded-3xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">4+</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">4</div>
                   <div className="text-slate-600 text-sm">Projects Built</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900 mb-1">5+</div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">8</div>
                   <div className="text-slate-600 text-sm">Languages</div>
                 </div>
                 <div className="text-center">

@@ -85,7 +85,7 @@ export default function ProjectsSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-8">
               <TabsList className="inline-flex w-auto bg-gray-100 rounded-xl mx-auto p-2">
                 <TabsTrigger
                   value="personal"

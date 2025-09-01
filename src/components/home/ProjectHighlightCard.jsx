@@ -27,8 +27,8 @@ export default function ProjectHighlightCard({ project }) {
             </div>
           </div>
           <CardContent className="p-6">
-            <h3 className="text-xl font-bold text-slate-900 mb-2 truncate">{project.title}</h3>
-            <p className="text-slate-600 mb-4 h-12 text-sm line-clamp-2">{project.description}</p>
+            <h3 className="text-xl font-bold text-slate-900 mb-2 mt-4 truncate">{project.title}</h3>
+            <p className="text-slate-600 mb-4 h-16 text-sm line-clamp-2">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {(project.tech_stack || []).slice(0, 3).map(tech => (
                 <Badge key={tech} variant="secondary" className="bg-slate-100 text-slate-700">
