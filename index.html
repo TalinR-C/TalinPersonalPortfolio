@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Talin's Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-e9aa79cd.js"></script>
-    <link rel="stylesheet" href="/assets/index-e82dce11.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+<!doctype html>
+<html lang="en" data-theme="dark" data-mode="live">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Talin Russo-Christoffelsz</title>
+  <meta name="description" content="Talin Russo-Christoffelsz, an aspiring product developer and designer, studies computer science and builds apps from first idea to release. Projects, skills and contact.">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap">
+  <link rel="stylesheet" href="/css/styles.css?v=6">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#/">Talin Russo-Christoffelsz</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#/projects" data-nav="projects">Projects</a>
+        <a href="#/skills" data-nav="skills">Skills</a>
+        <a href="#/about" data-nav="about">About</a>
+        <a href="#/contact" data-nav="contact">Contact</a>
+        <a id="resume-link" href="#" download>Résumé</a>
+      </nav>
+      <div class="topbar-actions">
+        <button type="button" class="iconbtn" id="theme-toggle" aria-label="Switch to light theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <script src="/js/data.js?v=6"></script>
+  <script src="/js/timelines.js?v=6"></script>
+  <script src="/js/app.js?v=6"></script>
+</body>
 </html>
