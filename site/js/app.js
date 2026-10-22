@@ -132,7 +132,7 @@
               <ul>
                 <li><a class="blink" href="${P.github}" target="_blank" rel="noopener">GitHub</a></li>
                 ${P.linkedin ? `<li><a class="blink" href="${P.linkedin}" target="_blank" rel="noopener">LinkedIn</a></li>` : live ? "" : `<li><span class="blink is-todo">LinkedIn</span>${note("Needs you")}</li>`}
-                <li><a class="blink" href="${P.resume}" download>Résumé</a></li>
+                ${P.resume ? `<li><a class="blink" href="${P.resume}" download>Résumé</a></li>` : ""}
               </ul>
             </div>
           </div>
@@ -276,10 +276,10 @@
     ${P.linkedin
       ? `<div class="crow"><a href="${P.linkedin}" target="_blank" rel="noopener"><span class="label">LinkedIn</span><b>Profile</b></a>${I.out}</div>`
       : live ? "" : `<div class="crow is-todo"><span><span class="label">LinkedIn</span>Add your profile link${note("Needs you")}</span></div>`}
-    <div class="crow"><a href="${P.resume}" download><span class="label">Résumé</span><b>Download the PDF</b></a>${I.down}</div>`;
+    ${P.resume ? `<div class="crow"><a href="${P.resume}" download><span class="label">Résumé</span><b>Download the PDF</b></a>${I.down}</div>` : ""}`;
 
   const renderChrome = () => {
-    $("#resume-link").href = P.resume;
+    if (P.resume) $(".nav").insertAdjacentHTML("beforeend", `<a id="resume-link" href="${P.resume}" download>Résumé</a>`);
     // Shown only on project pages, beside the theme toggle.
     $(".topbar-actions").insertAdjacentHTML("beforeend",
       `<a class="iconbtn" id="project-close" href="#/projects" aria-label="Close this project and go back to all projects" title="All projects">${I.close}</a>`);

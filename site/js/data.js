@@ -10,7 +10,7 @@ window.DATA = {
     github: "https://github.com/TalinR-C",
     githubLabel: "github.com/TalinR-C",
     linkedin: "https://www.linkedin.com/in/talin-russo-christoffelsz-71967a179", // from Talin's Academy notes
-    resume: "assets/Resume_TalinRusso-Christoffelsz.pdf",
+    resume: null, // Talin took the résumé download off the site on 2026-10-22. Set a PDF path (e.g. "assets/Resume_TalinRusso-Christoffelsz.pdf") to bring back the links.
     facts: [
       { label: "Studying", value: "Bachelor of Computer Science, RMIT University, 2024 to 2027" },
       { label: "Focus", value: "Product development and product direction" },
